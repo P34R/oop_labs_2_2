@@ -26,6 +26,7 @@ int main(){
     return 0;
 }
 */
+/*
 TEST_CASE("get order and check info") {
 	Order k;
 	k.get_order(0);
@@ -52,4 +53,4 @@ TEST_CASE("logged in user is admin") {
 	User test;
 	test.enter("admin", "admin");
 	CHECK(test.access_type == 1);
-}
+}*/

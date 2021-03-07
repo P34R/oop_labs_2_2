@@ -1,7 +1,7 @@
+#ifndef DOXYGEN_SHOULD_SKIP_THIS
 // bdlaboratory1.cpp: определяет точку входа для консольного приложения.
 //
 
-#include "stdafx.h"
 #include <iostream>
 using namespace std;
 int menus(int *ck_ind, int *or_ind);
@@ -885,3 +885,4 @@ int main()
 //	free(or_ind);
     return 0;
 }
+#endif // DOXYGEN_SHOULD_SKIP_THIS
