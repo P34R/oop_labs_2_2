@@ -1,0 +1,83 @@
+\hypertarget{class_user}{}\doxysection{User Class Reference}
+\label{class_user}\index{User@{User}}
+
+
+{\ttfamily \#include $<$User.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_user_a9ab6e8702bd20c8f054a5e7d943b2e50}{enter}} (string ulogin, string upassword)
+\item 
+void \mbox{\hyperlink{class_user_a17279c14025c7823b4c5ee1c34fd6a03}{edit\+\_\+user}} (string ulogin)
+\item 
+void \mbox{\hyperlink{class_user_a4d584587bf1c2f363d0629fe5506e31c}{add\+\_\+admin}} (string ulogin, string upassword)
+\item 
+bool \mbox{\hyperlink{class_user_aa7349016a65f87f6765cfec32a70d2c7}{File\+Exists}} (string $\ast$fname)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_user_a550dc3a6ae74224a47240c75a887a8d1}{login}}
+\item 
+string \mbox{\hyperlink{class_user_ab537b9a55bc7d7fcafcdf8e53d085e67}{password}}
+\item 
+bool \mbox{\hyperlink{class_user_a5284afc4f38043e53a01f832b5497f10}{access\+\_\+type}} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_user}{User}} contains information about user (login, password and type of user (admin or default)). Information saved in files 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_a4d584587bf1c2f363d0629fe5506e31c}\label{class_user_a4d584587bf1c2f363d0629fe5506e31c}} 
+\index{User@{User}!add\_admin@{add\_admin}}
+\index{add\_admin@{add\_admin}!User@{User}}
+\doxysubsubsection{\texorpdfstring{add\_admin()}{add\_admin()}}
+{\footnotesize\ttfamily void User\+::add\+\_\+admin (\begin{DoxyParamCaption}\item[{string}]{ulogin,  }\item[{string}]{upassword }\end{DoxyParamCaption})}
+
+Function only for admins. Adds new user with admin type \mbox{\Hypertarget{class_user_a17279c14025c7823b4c5ee1c34fd6a03}\label{class_user_a17279c14025c7823b4c5ee1c34fd6a03}} 
+\index{User@{User}!edit\_user@{edit\_user}}
+\index{edit\_user@{edit\_user}!User@{User}}
+\doxysubsubsection{\texorpdfstring{edit\_user()}{edit\_user()}}
+{\footnotesize\ttfamily void User\+::edit\+\_\+user (\begin{DoxyParamCaption}\item[{string}]{ulogin }\end{DoxyParamCaption})}
+
+Function only for admins. Edits user information (login/password/type). Doesn\textquotesingle{}t work on other admins \mbox{\Hypertarget{class_user_a9ab6e8702bd20c8f054a5e7d943b2e50}\label{class_user_a9ab6e8702bd20c8f054a5e7d943b2e50}} 
+\index{User@{User}!enter@{enter}}
+\index{enter@{enter}!User@{User}}
+\doxysubsubsection{\texorpdfstring{enter()}{enter()}}
+{\footnotesize\ttfamily void User\+::enter (\begin{DoxyParamCaption}\item[{string}]{ulogin,  }\item[{string}]{upassword }\end{DoxyParamCaption})}
+
+Default log in function \mbox{\Hypertarget{class_user_aa7349016a65f87f6765cfec32a70d2c7}\label{class_user_aa7349016a65f87f6765cfec32a70d2c7}} 
+\index{User@{User}!FileExists@{FileExists}}
+\index{FileExists@{FileExists}!User@{User}}
+\doxysubsubsection{\texorpdfstring{FileExists()}{FileExists()}}
+{\footnotesize\ttfamily bool User\+::\+File\+Exists (\begin{DoxyParamCaption}\item[{string $\ast$}]{fname }\end{DoxyParamCaption})}
+
+Function that check is user file exists 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_user_a5284afc4f38043e53a01f832b5497f10}\label{class_user_a5284afc4f38043e53a01f832b5497f10}} 
+\index{User@{User}!access\_type@{access\_type}}
+\index{access\_type@{access\_type}!User@{User}}
+\doxysubsubsection{\texorpdfstring{access\_type}{access\_type}}
+{\footnotesize\ttfamily bool User\+::access\+\_\+type =0}
+
+\mbox{\hyperlink{class_user}{User}} type (Admin or default user) \mbox{\Hypertarget{class_user_a550dc3a6ae74224a47240c75a887a8d1}\label{class_user_a550dc3a6ae74224a47240c75a887a8d1}} 
+\index{User@{User}!login@{login}}
+\index{login@{login}!User@{User}}
+\doxysubsubsection{\texorpdfstring{login}{login}}
+{\footnotesize\ttfamily string User\+::login}
+
+\mbox{\hyperlink{class_user}{User}} login \mbox{\Hypertarget{class_user_ab537b9a55bc7d7fcafcdf8e53d085e67}\label{class_user_ab537b9a55bc7d7fcafcdf8e53d085e67}} 
+\index{User@{User}!password@{password}}
+\index{password@{password}!User@{User}}
+\doxysubsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily string User\+::password}
+
+\mbox{\hyperlink{class_user}{User}} password 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Git\+Hub/\+OOP/oop\+\_\+labs\+\_\+2\+\_\+2/lab\+\_\+1main/\mbox{\hyperlink{_user_8h}{User.\+h}}\item 
+C\+:/\+Users/user/\+Documents/\+Git\+Hub/\+OOP/oop\+\_\+labs\+\_\+2\+\_\+2/lab\+\_\+1main/\mbox{\hyperlink{_user_8cpp}{User.\+cpp}}\end{DoxyCompactItemize}

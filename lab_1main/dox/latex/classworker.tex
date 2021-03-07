@@ -1,0 +1,137 @@
+\hypertarget{classworker}{}\doxysection{worker Class Reference}
+\label{classworker}\index{worker@{worker}}
+
+
+{\ttfamily \#include $<$Worker.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classworker_ac86ddcd18486e2024f96b21999614ccd}{add\+\_\+worker}} ()
+\item 
+\mbox{\hyperlink{classworker}{worker}} \& \mbox{\hyperlink{classworker_abeac6b2f761ad78eca3410fa19e4c760}{get\+\_\+worker}} (bool wtype, unsigned int wid)
+\item 
+void \mbox{\hyperlink{classworker_ae3b781657407e0b6316d970668385cde}{edit\+\_\+worker}} (bool wtype, unsigned int wid)
+\item 
+void \mbox{\hyperlink{classworker_a7ec3b24edbbd255a53ec4e0f9f7d823a}{delete\+\_\+worker}} (bool wtype, unsigned int wid)
+\item 
+bool \mbox{\hyperlink{classworker_a3b8056d1bd29c4b227c407356c289c92}{File\+Exists}} (string $\ast$fname)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classworker_a606c735e97972da146580e6c712958ce}{id}} =0
+\item 
+bool \mbox{\hyperlink{classworker_a0dc21cf3462af863d659021c61a4d7fc}{type}} =0
+\item 
+string \mbox{\hyperlink{classworker_a368602eb47662d3f2fe4b0532cbe1878}{name}}
+\item 
+double \mbox{\hyperlink{classworker_a8f1e0c703ddee91eeecbc7bd9508e9ff}{exp}}
+\item 
+int \mbox{\hyperlink{classworker_a86639abf0bbee1da33e6b69d97232308}{salary}}
+\item 
+bool \mbox{\hyperlink{classworker_acb9381debdbda42f10ce9fb83ae2a9b5}{is\+\_\+exist}} = 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classworker_a399c1121c518aab595349f3f4de31c30}{operator$<$$<$}} (ostream \&out, const \mbox{\hyperlink{classworker}{worker}} \&work)
+\item 
+istream \& \mbox{\hyperlink{classworker_aeef08aebd7b782dcfc8f32e9069360e6}{operator$>$$>$}} (istream \&in, \mbox{\hyperlink{classworker}{worker}} \&work)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class worker contains information about workers (Cooks and waiters saved in separate files) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classworker_ac86ddcd18486e2024f96b21999614ccd}\label{classworker_ac86ddcd18486e2024f96b21999614ccd}} 
+\index{worker@{worker}!add\_worker@{add\_worker}}
+\index{add\_worker@{add\_worker}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{add\_worker()}{add\_worker()}}
+{\footnotesize\ttfamily void worker\+::add\+\_\+worker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function that add worker to the file \mbox{\Hypertarget{classworker_a7ec3b24edbbd255a53ec4e0f9f7d823a}\label{classworker_a7ec3b24edbbd255a53ec4e0f9f7d823a}} 
+\index{worker@{worker}!delete\_worker@{delete\_worker}}
+\index{delete\_worker@{delete\_worker}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{delete\_worker()}{delete\_worker()}}
+{\footnotesize\ttfamily void worker\+::delete\+\_\+worker (\begin{DoxyParamCaption}\item[{bool}]{wtype,  }\item[{unsigned int}]{wid }\end{DoxyParamCaption})}
+
+Function that delete worker with such id=wid and type=wtype from the file (if there is no worker with such id -\/ ERROR) \mbox{\Hypertarget{classworker_ae3b781657407e0b6316d970668385cde}\label{classworker_ae3b781657407e0b6316d970668385cde}} 
+\index{worker@{worker}!edit\_worker@{edit\_worker}}
+\index{edit\_worker@{edit\_worker}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{edit\_worker()}{edit\_worker()}}
+{\footnotesize\ttfamily void worker\+::edit\+\_\+worker (\begin{DoxyParamCaption}\item[{bool}]{wtype,  }\item[{unsigned int}]{wid }\end{DoxyParamCaption})}
+
+Function that edits worker with such id=wid and type=wtype from the file (if there is no worker with such id -\/ ERROR) \mbox{\Hypertarget{classworker_a3b8056d1bd29c4b227c407356c289c92}\label{classworker_a3b8056d1bd29c4b227c407356c289c92}} 
+\index{worker@{worker}!FileExists@{FileExists}}
+\index{FileExists@{FileExists}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{FileExists()}{FileExists()}}
+{\footnotesize\ttfamily bool worker\+::\+File\+Exists (\begin{DoxyParamCaption}\item[{string $\ast$}]{fname }\end{DoxyParamCaption})}
+
+Function that check is orders file exists \mbox{\Hypertarget{classworker_abeac6b2f761ad78eca3410fa19e4c760}\label{classworker_abeac6b2f761ad78eca3410fa19e4c760}} 
+\index{worker@{worker}!get\_worker@{get\_worker}}
+\index{get\_worker@{get\_worker}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{get\_worker()}{get\_worker()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classworker}{worker}} \& worker\+::get\+\_\+worker (\begin{DoxyParamCaption}\item[{bool}]{wtype,  }\item[{unsigned int}]{wid }\end{DoxyParamCaption})}
+
+Function that get worker with such id=wid and type=wtype from the file (if there is no worker with such id -\/ ERROR) 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classworker_a399c1121c518aab595349f3f4de31c30}\label{classworker_a399c1121c518aab595349f3f4de31c30}} 
+\index{worker@{worker}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classworker}{worker}} \&}]{work }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Overloaded opertor $<$$<$ \mbox{\Hypertarget{classworker_aeef08aebd7b782dcfc8f32e9069360e6}\label{classworker_aeef08aebd7b782dcfc8f32e9069360e6}} 
+\index{worker@{worker}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{in,  }\item[{\mbox{\hyperlink{classworker}{worker}} \&}]{work }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Overloaded opertor $<$$<$ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classworker_a8f1e0c703ddee91eeecbc7bd9508e9ff}\label{classworker_a8f1e0c703ddee91eeecbc7bd9508e9ff}} 
+\index{worker@{worker}!exp@{exp}}
+\index{exp@{exp}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{exp}{exp}}
+{\footnotesize\ttfamily double worker\+::exp}
+
+Workers experience (in years) \mbox{\Hypertarget{classworker_a606c735e97972da146580e6c712958ce}\label{classworker_a606c735e97972da146580e6c712958ce}} 
+\index{worker@{worker}!id@{id}}
+\index{id@{id}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int worker\+::id =0}
+
+Worker\textquotesingle{}s id \mbox{\Hypertarget{classworker_acb9381debdbda42f10ce9fb83ae2a9b5}\label{classworker_acb9381debdbda42f10ce9fb83ae2a9b5}} 
+\index{worker@{worker}!is\_exist@{is\_exist}}
+\index{is\_exist@{is\_exist}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{is\_exist}{is\_exist}}
+{\footnotesize\ttfamily bool worker\+::is\+\_\+exist = 1}
+
+variable responsible for worker existence \mbox{\Hypertarget{classworker_a368602eb47662d3f2fe4b0532cbe1878}\label{classworker_a368602eb47662d3f2fe4b0532cbe1878}} 
+\index{worker@{worker}!name@{name}}
+\index{name@{name}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string worker\+::name}
+
+Worker\textquotesingle{}s name \mbox{\Hypertarget{classworker_a86639abf0bbee1da33e6b69d97232308}\label{classworker_a86639abf0bbee1da33e6b69d97232308}} 
+\index{worker@{worker}!salary@{salary}}
+\index{salary@{salary}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{salary}{salary}}
+{\footnotesize\ttfamily int worker\+::salary}
+
+Workers salary (can be saved in dollars/\+UAH/\+RUB/etc, but expected same currency for all workers \mbox{\Hypertarget{classworker_a0dc21cf3462af863d659021c61a4d7fc}\label{classworker_a0dc21cf3462af863d659021c61a4d7fc}} 
+\index{worker@{worker}!type@{type}}
+\index{type@{type}!worker@{worker}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily bool worker\+::type =0}
+
+Worker\textquotesingle{}s type (cook or waiter) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Git\+Hub/\+OOP/oop\+\_\+labs\+\_\+2\+\_\+2/lab\+\_\+1main/\mbox{\hyperlink{_worker_8h}{Worker.\+h}}\item 
+C\+:/\+Users/user/\+Documents/\+Git\+Hub/\+OOP/oop\+\_\+labs\+\_\+2\+\_\+2/lab\+\_\+1main/\mbox{\hyperlink{_worker_8cpp}{Worker.\+cpp}}\end{DoxyCompactItemize}
